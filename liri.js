@@ -13,15 +13,15 @@ var inputs = input[3];
 //commands
 switch (action) {
 	case "tweet-it":
-	myTwits(inputs);
+	myTwits(input);
 	break;
 
 	case "spotify-it":
-	spotifySong(inputs);
+	spotifySong(input);
 	break;
 
 	case "movie-it":
-	movieChoice(inputs);
+	movieChoice(input);
 	break;
 
 	case "just-do-it":
@@ -30,8 +30,8 @@ switch (action) {
 };
 
 //20 tweets from account linked
-function myTwits(inputs) {
-	var param = {screen_name: inputs, 
+function myTwits(input) {
+	var param = {screen_name: input, 
 		         count: 20};
 	
 		client.get('statuses/user_timeline', param, function(error, tweets, response) {
@@ -45,15 +45,15 @@ function myTwits(inputs) {
 		});
 }
 
-function spotifySong(inputs) {
+function spotifySong(input) {
 
     var spotify = new Spotify(keys.spotifyKeys);
     //default song
-		if (!inputs){
-        	inputs = 'Love the way you lie';
+		if (!input){
+        	input = 'Love the way you lie';
             }
             //song search
-		spotify.search({ type: 'track', query: inputs }, function(err, data) {
+		spotify.search({ type: 'track', query: input }, function(err, data) {
 			if (err){
 	            console.log('Error occurred: ' + err);
 	                return;
@@ -67,12 +67,12 @@ function spotifySong(inputs) {
 }
 
 
-function movieChoice(inputs) {
+function movieChoice(input) {
 
-	var queryUrl = "http://www.omdbapi.com/?t=" + inputs + "&y=&plot=short&apikey=40e9cece";
+	var queryUrl = "http://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=40e9cece";
 	request(queryUrl, function(error, response, body) {
-		if (!inputs){
-        	inputs = 'The Avengers';
+		if (!input){
+        	input = 'The Avengers';
     	}
 		if (!error && response.statusCode === 200) {
 		    console.log("Title: " + JSON.parse(body).Title);
