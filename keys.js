@@ -1,8 +1,8 @@
 exports.twitterKeys = {
-    consumer_key: 'yT3KPpBExbAqFOvek8j0K4qMa',
-    consumer_secret: 'zuLwI6p840YiDIZMq6D6iHKI4DjugUB7gTbD6sMfzgvvBBbOX5',
-    access_token_key: '1945133678-bLaMTIDFga7NRttvj2H3kWHfe8Pko3ezzB6ZTcq',
-    access_token_secret: 'XXa4UJ2Yi8JJKMvtufabxvLzDuxwRePWRi2dFrocUOAYM',
+    consumer_key: '	AT7SelNnfqfRAoEYPJUZaTpeZ',
+    consumer_secret: 'aicC3v871rlqLqstJfFtQcOSCHDrY1EUHIzCIVNZHWayIqreku',
+    access_token_key: '	1013947635881922560-uDW4oUgkmxF9TXXwVu21lx5BPGhXHv',
+    access_token_secret: '	RQ1cRaM5ikxS01kVB7wsXo91EhZCK3s9yfGa2e1MM88iR',
   }
   
   exports.spotifyKeys = {
