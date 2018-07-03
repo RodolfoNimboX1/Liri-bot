@@ -1,17 +1,17 @@
 {
-  "name": "liri-bot",
+  "name": "liribot",
   "version": "1.0.0",
-  "description": "",
+  "description": "* Commands to use Liri App",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RodolfoNimboX1/Liri-bot"
+    "url": "git+https://github.com/RodolfoNimboX1/Liri-bot.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rodolfo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RodolfoNimboX1/Liri-bot/issues"
@@ -24,5 +24,6 @@
     "npm": "^6.1.0",
     "request": "^2.83.0",
     "twitter": "^1.7.1"
-  }
+  },
+  "devDependencies": {}
 }

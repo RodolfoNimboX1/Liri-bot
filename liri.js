@@ -8,7 +8,7 @@ var fs = require('fs');
 var client = new Twitter(keys.twitterKeys);
 var input = process.argv;
 var action = input[2];
-var inputs = input[3];
+var input = input[3];
 
 //commands
 switch (action) {
