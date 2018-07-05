@@ -1,1 +1,1 @@
-spotify-this-song, "Love the way you lie"
+spotify-it, "Love the way you lie"
