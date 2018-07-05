@@ -1,8 +1,8 @@
 {
-  "name": "liribot",
+  "name": "Liri-bot",
   "version": "1.0.0",
   "description": "* Commands to use Liri App",
-  "main": "index.js",
+  "main": "keys.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/RodolfoNimboX1/Liri-bot.git"
   },
   "keywords": [],
-  "author": "Rodolfo",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RodolfoNimboX1/Liri-bot/issues"
@@ -20,10 +20,8 @@
   "dependencies": {
     "dotenv": "^6.0.0",
     "node-spotify-api": "^1.0.7",
-    "node-tweet-cli": "^0.1.4",
     "npm": "^6.1.0",
-    "request": "^2.83.0",
+    "request": "^2.87.0",
     "twitter": "^1.7.1"
-  },
-  "devDependencies": {}
+  }
 }

@@ -4,8 +4,9 @@ var keys = require("./keys.js");
 var request = require('request');
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
+var spotify = new Spotify(keys.spotify);
 var fs = require('fs');
-var client = new Twitter(keys.twitterKeys);
+var client = new Twitter(keys.twitter);
 var input = process.argv;
 var action = input[2];
 var input = input[3];
@@ -46,8 +47,6 @@ function myTwits(input) {
 }
 
 function spotifySong(input) {
-
-    var spotify = new Spotify(keys.spotifyKeys);
     //default song
 		if (!input){
         	input = 'Love the way you lie';
